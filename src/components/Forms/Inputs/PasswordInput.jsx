@@ -26,7 +26,7 @@ function PasswordInput  (
           aria-label={label}
           name={id}
           id={id}
-          className="peer relative block h-14 w-full overflow-x-auto rounded-[20px] border border-gray-500 bg-neutral-10 py-2 pl-4 pr-14 leading-5 focus:border-2 focus:border-primary-600 focus:outline-none focus:ring-0"
+          className="peer relative block h-10 w-full overflow-x-auto rounded-[20px] border border-gray-500 bg-neutral-10 py-2 pl-4 pr-14 leading-5 focus:border-2 focus:border-primary-600 focus:outline-none focus:ring-0"
           placeholder=" "
           {...props}
         />
@@ -39,7 +39,7 @@ function PasswordInput  (
         </label>
 
         <button
-          className="absolute right-4 top-4 z-10"
+          className="absolute right-4 top-2 z-10"
           type="button"
           onClick={toggleVisibility}
         >

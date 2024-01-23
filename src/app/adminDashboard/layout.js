@@ -45,41 +45,123 @@ export default function dashBoardLayout({ children }) {
           <div className="flex w-full px-6 py-4 gap-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
               fill="none"
             >
               <path
-                d="M1.68811 10.22V14.71C1.68811 19.2 3.48811 21 7.97811 21H13.3681C17.8581 21 19.6581 19.2 19.6581 14.71V10.22"
+                d="M18.1404 21.6188C17.2604 21.8788 16.2204 21.9988 15.0004 21.9988H9.00035C7.78035 21.9988 6.74035 21.8788 5.86035 21.6188C6.08035 19.0188 8.75035 16.9688 12.0004 16.9688C15.2504 16.9688 17.9204 19.0188 18.1404 21.6188Z"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M10.6781 11C12.5081 11 13.8581 9.51 13.6781 7.68L13.0181 1H8.34809L7.67809 7.68C7.49809 9.51 8.8481 11 10.6781 11Z"
+                d="M15 2H9C4 2 2 4 2 9V15C2 18.78 3.14 20.85 5.86 21.62C6.08 19.02 8.75 16.97 12 16.97C15.25 16.97 17.92 19.02 18.14 21.62C20.86 20.85 22 18.78 22 15V9C22 4 20 2 15 2ZM12 14.17C10.02 14.17 8.42 12.56 8.42 10.58C8.42 8.60002 10.02 7 12 7C13.98 7 15.58 8.60002 15.58 10.58C15.58 12.56 13.98 14.17 12 14.17Z"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M16.9881 11C19.0081 11 20.4881 9.36 20.2881 7.35L20.0081 4.6C19.6481 2 18.6481 1 16.0281 1H12.9781L13.6781 8.01C13.8481 9.66 15.3381 11 16.9881 11Z"
+                d="M15.5799 10.58C15.5799 12.56 13.9799 14.17 11.9999 14.17C10.0199 14.17 8.41992 12.56 8.41992 10.58C8.41992 8.60002 10.0199 7 11.9999 7C13.9799 7 15.5799 8.60002 15.5799 10.58Z"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Customer</p>
+          </div>
+          <div className="flex w-full px-6 py-4 gap-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M20 7.04V16.96C20 18.48 19.86 19.56 19.5 20.33C19.5 20.34 19.49 20.36 19.48 20.37C19.26 20.65 18.97 20.79 18.63 20.79C18.1 20.79 17.46 20.44 16.77 19.7C15.95 18.82 14.69 18.89 13.97 19.85L12.96 21.19C12.56 21.73 12.03 22 11.5 22C10.97 22 10.44 21.73 10.04 21.19L9.02002 19.84C8.31002 18.89 7.05999 18.82 6.23999 19.69L6.22998 19.7C5.09998 20.91 4.10002 21.09 3.52002 20.37C3.51002 20.36 3.5 20.34 3.5 20.33C3.14 19.56 3 18.48 3 16.96V7.04C3 5.52 3.14 4.44 3.5 3.67C3.5 3.66 3.50002 3.65 3.52002 3.64C4.09002 2.91 5.09998 3.09 6.22998 4.3L6.23999 4.31C7.05999 5.18 8.31002 5.11 9.02002 4.16L10.04 2.81C10.44 2.27 10.97 2 11.5 2C12.03 2 12.56 2.27 12.96 2.81L13.97 4.15C14.69 5.11 15.95 5.18 16.77 4.3C17.46 3.56 18.1 3.21 18.63 3.21C18.97 3.21 19.26 3.36 19.48 3.64C19.5 3.65 19.5 3.66 19.5 3.67C19.86 4.44 20 5.52 20 7.04Z"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M4.31811 11C5.96811 11 7.4581 9.66 7.6181 8.01L7.83811 5.8L8.31812 1H5.26811C2.64812 1 1.64811 2 1.28811 4.6L1.01811 7.35C0.818105 9.36 2.29811 11 4.31811 11Z"
+                d="M8 10.25H16"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M10.6781 16C9.0081 16 8.1781 16.83 8.1781 18.5V21H13.1781V18.5C13.1781 16.83 12.3481 16 10.6781 16Z"
+                d="M8 13.75H14"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Orders</p>
+          </div>
+          <div className="flex w-full px-6 py-4 gap-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M20.4198 12.3697C21.2898 12.7197 21.8297 13.7497 21.6297 14.6597L21.2197 16.5197C20.5097 19.7197 17.9997 21.9997 14.3797 21.9997H9.61974C5.99974 21.9997 3.48974 19.7197 2.77974 16.5197L2.36974 14.6597C2.16974 13.7497 2.70973 12.7197 3.57973 12.3697L4.99974 11.7997L10.5098 9.58969C11.4698 9.20969 12.5297 9.20969 13.4897 9.58969L18.9997 11.7997L20.4198 12.3697Z"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 22V10"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 8V11.8L13.49 9.59C12.53 9.21 11.47 9.21 10.51 9.59L5 11.8V8C5 6.35 6.35 5 8 5H16C17.65 5 19 6.35 19 8Z"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14.5 5H9.5V3C9.5 2.45 9.95 2 10.5 2H13.5C14.05 2 14.5 2.45 14.5 3V5Z"
+                stroke="#292D32"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Shipments</p>
+          </div>
+          <div className="flex w-full px-6 py-4 gap-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M13.0598 10.9414C15.3098 13.1914 15.3098 16.8314 13.0598 19.0714C10.8098 21.3114 7.16985 21.3214 4.92985 19.0714C2.68985 16.8214 2.67985 13.1814 4.92985 10.9414"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.59 13.4089C8.24996 11.0689 8.24996 7.26891 10.59 4.91891C12.93 2.56891 16.73 2.57891 19.08 4.91891C21.43 7.25891 21.42 11.0589 19.08 13.4089"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
@@ -97,28 +179,35 @@ export default function dashBoardLayout({ children }) {
               fill="none"
             >
               <path
-                d="M13 11L21.2 2.8"
+                d="M13 11.1484H7"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M22 6.8V2H17.2"
+                d="M2 11.1498V6.52985C2 4.48985 3.65 2.83984 5.69 2.83984H11.31C13.35 2.83984 15 4.10984 15 6.14984"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M11 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V13"
+                d="M17.48 12.1984C16.98 12.6784 16.74 13.4184 16.94 14.1784C17.19 15.1084 18.11 15.6984 19.07 15.6984H20V17.1484C20 19.3584 18.21 21.1484 16 21.1484H6C3.79 21.1484 2 19.3584 2 17.1484V10.1484C2 7.93844 3.79 6.14844 6 6.14844H16C18.2 6.14844 20 7.94844 20 10.1484V11.5984H18.92C18.36 11.5984 17.85 11.8184 17.48 12.1984Z"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22.0002 12.6216V14.6816C22.0002 15.2416 21.5402 15.7016 20.9702 15.7016H19.0402C17.9602 15.7016 16.9702 14.9116 16.8802 13.8316C16.8202 13.2016 17.0602 12.6116 17.4802 12.2016C17.8502 11.8216 18.3602 11.6016 18.9202 11.6016H20.9702C21.5402 11.6016 22.0002 12.0616 22.0002 12.6216Z"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </svg>
-            <p>Export</p>
+            <p>Billing</p>
           </div>
           <div className="flex w-full px-6 py-4 gap-6">
             <svg
@@ -129,180 +218,88 @@ export default function dashBoardLayout({ children }) {
               fill="none"
             >
               <path
-                d="M22 2L13.8 10.2"
+                d="M22 4.67165V16.7417C22 17.7017 21.22 18.6016 20.26 18.7216L19.93 18.7617C17.75 19.0517 14.39 20.1616 12.47 21.2216C12.21 21.3716 11.78 21.3716 11.51 21.2216L11.47 21.2017C9.54997 20.1517 6.20003 19.0517 4.03003 18.7617L3.73999 18.7216C2.77999 18.6016 2 17.7017 2 16.7417V4.66164C2 3.47164 2.96997 2.57165 4.15997 2.67165C6.25997 2.84165 9.43997 3.90168 11.22 5.01168L11.47 5.16164C11.76 5.34164 12.24 5.34164 12.53 5.16164L12.7 5.05166C13.33 4.66166 14.13 4.27165 15 3.92165V8.00167L17 6.67165L19 8.00167V2.7817C19.27 2.7317 19.53 2.70166 19.77 2.68166H19.83C21.02 2.58166 22 3.47165 22 4.67165Z"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M13 6.17V11H17.83"
+                d="M12 5.48828V20.4883"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <path
-                d="M11 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V13"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <p>Import</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M15.51 2.83H8.49C6 2.83 5.45 4.07 5.13 5.59L4 11H20L18.87 5.59C18.55 4.07 18 2.83 15.51 2.83Z"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M21.99 19.82C22.1 20.99 21.16 22 19.96 22H18.08C17 22 16.85 21.54 16.66 20.97L16.46 20.37C16.18 19.55 16 19 14.56 19H9.43998C7.99998 19 7.78998 19.62 7.53998 20.37L7.33998 20.97C7.14998 21.54 6.99998 22 5.91998 22H4.03998C2.83998 22 1.89998 20.99 2.00998 19.82L2.56998 13.73C2.70998 12.23 2.99998 11 5.61998 11H18.38C21 11 21.29 12.23 21.43 13.73L21.99 19.82Z"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M4 8H3"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M21 8H20"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12 3V5"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10.5 5H13.5"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M6 15H9"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15 15H18"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <p>Auto Import</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M5.46997 9C7.40297 9 8.96997 7.433 8.96997 5.5C8.96997 3.567 7.40297 2 5.46997 2C3.53697 2 1.96997 3.567 1.96997 5.5C1.96997 7.433 3.53697 9 5.46997 9Z"
-                stroke="#938F99"
-                stroke-width="1.5"
-              />
-              <path
-                d="M16.97 15H19.97C21.07 15 21.97 15.9 21.97 17V20C21.97 21.1 21.07 22 19.97 22H16.97C15.87 22 14.97 21.1 14.97 20V17C14.97 15.9 15.87 15 16.97 15Z"
-                stroke="#938F99"
-                stroke-width="1.5"
-              />
-              <path
-                d="M11.9999 5H14.6799C16.5299 5 17.3899 7.29 15.9999 8.51L8.00995 15.5C6.61995 16.71 7.47994 19 9.31994 19H11.9999"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M5.48622 5.5H5.49777"
-                stroke="#938F99"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18.4862 18.5H18.4978"
-                stroke="#938F99"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <p>Tracking</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M13 11.15H7"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2 11.15V6.53003C2 4.49003 3.65 2.84003 5.69 2.84003H11.31C13.35 2.84003 15 4.11002 15 6.15002"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M17.48 12.2C16.98 12.68 16.74 13.42 16.94 14.18C17.19 15.11 18.11 15.7 19.07 15.7H20V17.15C20 19.36 18.21 21.15 16 21.15H6C3.79 21.15 2 19.36 2 17.15V10.15C2 7.94002 3.79 6.15002 6 6.15002H16C18.2 6.15002 20 7.95002 20 10.15V11.6H18.92C18.36 11.6 17.85 11.82 17.48 12.2Z"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22 12.62V14.68C22 15.24 21.5399 15.7 20.9699 15.7H19.0399C17.9599 15.7 16.97 14.91 16.88 13.83C16.82 13.2 17.0599 12.61 17.4799 12.2C17.8499 11.82 18.36 11.6 18.92 11.6H20.9699C21.5399 11.6 22 12.06 22 12.62Z"
+                d="M19 2.78125V8.00122L17 6.6712L15 8.00122V3.9212C16.31 3.4012 17.77 2.98125 19 2.78125Z"
                 stroke="#938F99"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </svg>
-            <p>Payment History</p>
+            <p>Blog</p>
           </div>
         </div>
         <hr class="w-4/5 mx-auto border-t-1" />
         <div className="flex flex-col py-2">
+          <div className="flex w-full px-6 py-4 gap-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M11.4594 13.7294C13.0113 13.7294 14.2694 12.4713 14.2694 10.9194C14.2694 9.36745 13.0113 8.10938 11.4594 8.10938C9.90749 8.10938 8.64941 9.36745 8.64941 10.9194C8.64941 12.4713 9.90749 13.7294 11.4594 13.7294Z"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.6495 20.1988C16.6495 17.8688 14.3295 15.9688 11.4595 15.9688C8.58953 15.9688 6.26953 17.8588 6.26953 20.1988"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 12.5C21 17.75 16.75 22 11.5 22C6.25 22 2 17.75 2 12.5C2 7.25 6.25 3 11.5 3C12.81 3 14.06 3.25999 15.2 3.73999C15.07 4.13999 15 4.56 15 5C15 5.75 15.21 6.46 15.58 7.06C15.78 7.4 16.04 7.70997 16.34 7.96997C17.04 8.60997 17.97 9 19 9C19.44 9 19.86 8.92998 20.25 8.78998C20.73 9.92998 21 11.19 21 12.5Z"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M23 5C23 5.32 22.96 5.62999 22.88 5.92999C22.79 6.32999 22.63 6.72 22.42 7.06C21.94 7.87 21.17 8.49998 20.25 8.78998C19.86 8.92998 19.44 9 19 9C17.97 9 17.04 8.60997 16.34 7.96997C16.04 7.70997 15.78 7.4 15.58 7.06C15.21 6.46 15 5.75 15 5C15 4.56 15.07 4.13999 15.2 3.73999C15.39 3.15999 15.71 2.64002 16.13 2.21002C16.86 1.46002 17.88 1 19 1C20.18 1 21.25 1.51002 21.97 2.33002C22.61 3.04002 23 3.98 23 5Z"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.4898 4.98047H17.5098"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19 3.51953V6.50952"
+                stroke="#938F99"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Refer A Friend</p>
+          </div>
           <div className="flex w-full px-6 py-4 gap-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -369,29 +366,6 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Get a Quote</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M15 16C18.866 16 22 12.866 22 9C22 5.13401 18.866 2 15 2C11.134 2 8 5.13401 8 9C8 12.866 11.134 16 15 16Z"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-              />
-              <path
-                d="M9 22C12.866 22 16 18.866 16 15C16 11.134 12.866 8 9 8C5.13401 8 2 11.134 2 15C2 18.866 5.13401 22 9 22Z"
-                stroke="#938F99"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-              />
-            </svg>
-            <p>Help</p>
           </div>
           <div className="flex w-full px-6 py-4 gap-6">
             <svg

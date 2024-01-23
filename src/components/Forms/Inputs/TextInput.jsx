@@ -17,7 +17,7 @@ const TextInput = (
         aria-label={label}
         name={id}
         id={id}
-        className={`peer relative block h-14 w-full overflow-x-auto rounded-[20px] border border-gray-500 px-4 py-2 leading-5 focus:border-2 ring-white focus:border-primary-600 focus:outline-none focus:ring-0 ${bg}`}
+        className={`peer relative block h-10 w-full overflow-x-auto rounded-[20px] border border-gray-500 px-4 py-2 leading-5 focus:border-2 ring-white focus:border-primary-600 focus:outline-none focus:ring-0 ${bg}`}
         placeholder={placeholder}
         {...props}
       />

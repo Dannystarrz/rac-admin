@@ -39,7 +39,7 @@ function LoginForm() {
       <div className="text-white">
         <Image src={logo} alt="" className="h-[30px] lg:h-fit" />
       </div>
-      <div className="bg-white mt-[20px] lg:mt-[50px] w-full lg:w-[40%] p-[50px_20px] rounded-[20px] flex flex-col items-center justify-center">
+      <div className="bg-white mt-[20px] lg:mt-[50px] w-full lg:w-[40%] p-6 px-8 rounded-[20px] flex flex-col items-center justify-center">
         <p className="text-[22px]">LOGIN</p>
         <div className="w-full mt-[20px] lg:mt-[50px] flex flex-col items-center justify-center">
           <div className="w-full lg:w-[70%] flex flex-col items-center">
@@ -49,18 +49,13 @@ function LoginForm() {
               label="Email"
               onChange={(e) => setEmail(e.target.value)}
             />
-            
           </div>
           <div className="w-full lg:w-[70%] flex flex-col items-center mt-[30px] relative">
-
             <PasswordInput
-                id="password"
-                label="Password"
-                onChange={(e) => setPassword(e.target.value)}
-            
+              id="password"
+              label="Password"
+              onChange={(e) => setPassword(e.target.value)}
             />
-           
-          
           </div>
           <div className="mt-[50px]">
             <button
@@ -72,6 +67,12 @@ function LoginForm() {
             </button>
           </div>
         </div>
+      </div>
+      <div className="mt-5">
+        <p className="text-white text-center">
+          New to RAC Logistics? <span className="text-[#D0BCFF]">Sign Up</span>
+        </p>
+        <p className="text-[#D0BCFF] text-center">Forgot your password?</p>
       </div>
     </div>
   );
