@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="en">
-      <body className="font-roboto">
+      <body className="font-roboto h-screen w-screen">
         {children}
       </body>
     </html>

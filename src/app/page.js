@@ -31,11 +31,11 @@ function LoginForm() {
     //     console.log(error);
     //   }
     // }
-    navigate.push('/adminDashboard')
+    navigate.push('/adminDashboard');
   };
 
   return (
-    <>
+    <div className="bg-primary flex-col font-roboto flex h-screen w-screen justify-center items-center">
       <div className="text-white">
         <Image src={logo} alt="" className="h-[30px] lg:h-fit" />
       </div>
@@ -73,7 +73,7 @@ function LoginForm() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
