@@ -1,6 +1,12 @@
 'use client'
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function dashBoardLayout({ children }) {
+
+  const pathname = usePathname();
+
+
   return (
     <section className="flex">
       <div className="bg-primary h-auto w-1/4 text-white pt-6">
@@ -17,7 +23,11 @@ export default function dashBoardLayout({ children }) {
           </div>
         </div>
         <div className="mt-6 mb-16 flex flex-col py-2">
-          <div className="flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6">
+          <Link
+          href={"/adminDashboard/orders"}
+          className={pathname === "/adminDashboard/orders"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -41,8 +51,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Home</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/customer"}
+          className={pathname === "/adminDashboard/customer"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -73,8 +87,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Customer</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/orders"}
+          className={pathname === "/adminDashboard/orders"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -105,8 +123,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Orders</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/shipments"}
+          className={pathname === "/adminDashboard/shipments"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -144,8 +166,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Shipments</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/shopForMe"}
+          className={pathname === "/adminDashboard/shopForMe"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -169,8 +195,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Shop For Me</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/billing"}
+          className={pathname === "/adminDashboard/billing"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -208,8 +238,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Billing</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/blog"}
+          className={pathname === "/adminDashboard/blog"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -240,11 +274,14 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Blog</p>
-          </div>
+          </Link>
         </div>
         <hr class="w-4/5 mx-auto border-t-1" />
         <div className="flex flex-col py-2">
-          <div className="flex w-full px-6 py-4 gap-6">
+          <Link href={"/adminDashboard/referAfriend"}
+          className={pathname === "/adminDashboard/referAfriend"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -299,8 +336,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Refer A Friend</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/getAquote"}
+          className={pathname === "/adminDashboard/getAquote"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -366,8 +407,12 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Get a Quote</p>
-          </div>
-          <div className="flex w-full px-6 py-4 gap-6">
+          </Link>
+          <Link 
+          href={"/adminDashboard/settings"}
+          className={pathname === "/adminDashboard/settings"
+          ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
+          : `flex w-full px-6 py-4 gap-6`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -432,7 +477,7 @@ export default function dashBoardLayout({ children }) {
               />
             </svg>
             <p>Settings</p>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="w-3/4 fixed right-0 max-h-screen">{children}</div>
