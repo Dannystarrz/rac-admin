@@ -24,8 +24,8 @@ export default function dashBoardLayout({ children }) {
         </div>
         <div className="mt-6 mb-16 flex flex-col py-2">
           <Link
-          href={"/adminDashboard/orders"}
-          className={pathname === "/adminDashboard/orders"
+          href={"/adminDashboard"}
+          className={pathname === "/adminDashboard"
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
