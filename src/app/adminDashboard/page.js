@@ -1,7 +1,14 @@
+'use client'
 // import Image from "next/image";
 // import tabImage from "../images/Rectangle 12.png";
 
+import { useRouter } from "next/navigation";
+
+
 export default function Home() {
+
+  const navigate = useRouter();
+
   return (
     <main className="w-full overflow-auto  bg-[#F4EFF4]">
       <div className="flex justify-between w-full p-4 pt-8 bg-white drop-shadow-md rounded-b-lg">
@@ -473,7 +480,9 @@ export default function Home() {
                   You have no recent requests that need attention, would you
                   like to make a new shop for me request?
                 </p>
-                <button className="bg-[#6750A4] flex justify-center gap-2 rounded-3xl text-white font-medium py-2 px-12 items-center">
+                <button 
+                onClick={()=>navigate.push('/adminDashboard/orders')}
+                className="bg-[#6750A4] flex justify-center gap-2 rounded-3xl text-white font-medium py-2 px-12 items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"

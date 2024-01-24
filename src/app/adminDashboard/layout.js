@@ -54,7 +54,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/customer"}
-          className={pathname === "/adminDashboard/customer"
+          className={pathname.startsWith('/adminDashboard/customer')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -90,7 +90,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/orders"}
-          className={pathname === "/adminDashboard/orders"
+          className={pathname.startsWith('/adminDashboard/orders')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -126,7 +126,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/shipments"}
-          className={pathname === "/adminDashboard/shipments"
+          className={pathname.startsWith('/adminDashboard/shipments')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -169,7 +169,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/shopForMe"}
-          className={pathname === "/adminDashboard/shopForMe"
+          className={pathname.startsWith('/adminDashboard/shopForMe')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -198,7 +198,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/billing"}
-          className={pathname === "/adminDashboard/billing"
+          className={pathname.startsWith('/adminDashboard/billing')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -241,7 +241,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/blog"}
-          className={pathname === "/adminDashboard/blog"
+          className={pathname.startsWith('/adminDashboard/blog')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -279,7 +279,7 @@ export default function dashBoardLayout({ children }) {
         <hr class="w-4/5 mx-auto border-t-1" />
         <div className="flex flex-col py-2">
           <Link href={"/adminDashboard/referAfriend"}
-          className={pathname === "/adminDashboard/referAfriend"
+          className={pathname.startsWith('/adminDashboard/referAfriend')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -339,7 +339,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/getAquote"}
-          className={pathname === "/adminDashboard/getAquote"
+          className={pathname.startsWith('/adminDashboard/getAquote')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -410,7 +410,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
           <Link 
           href={"/adminDashboard/settings"}
-          className={pathname === "/adminDashboard/settings"
+          className={pathname.startsWith('/adminDashboard/settings')
           ?`flex w-full bg-activeBg bg-cover bg-center px-6 py-4 gap-6`
           : `flex w-full px-6 py-4 gap-6`}>
             <svg
@@ -480,7 +480,7 @@ export default function dashBoardLayout({ children }) {
           </Link>
         </div>
       </div>
-      <div className="w-3/4 fixed right-0 max-h-screen">{children}</div>
+      <div className="w-3/4 fixed right-0 h-screen">{children}</div>
     </section>
   );
 }

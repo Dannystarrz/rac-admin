@@ -1,7 +1,11 @@
+'use client'
 // import Image from "next/image";
 // import tabImage from "../images/Rectangle 12.png";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+
+  const navigate = useRouter();
    return (
      <main className="w-full  bg-[#F4EFF4] h-full">
        <div className="flex justify-between w-full p-4 pt-8 bg-white drop-shadow-md rounded-b-lg">
@@ -123,7 +127,9 @@ export default function Home() {
              <span className="font-bold">complete order history</span> of all
              your registered website customers in one place.
            </p>
-           <button className="bg-[#6750A4] justify-center rounded-2xl py-3 px-6 w-full flex text-white items-center gap-4">
+           <button 
+           onClick={()=>navigate.push('/adminDashboard/orders/orderHistory')}
+           className="bg-[#6750A4] justify-center rounded-2xl py-3 px-6 w-full flex text-white items-center gap-4">
              <svg
                xmlns="http://www.w3.org/2000/svg"
                width="19"
@@ -154,7 +160,7 @@ export default function Home() {
                  fill="white"
                />
              </svg>
-             View Orders
+             Create new order
            </button>
          </div>
        </div>
