@@ -2,7 +2,7 @@
 
 export default function dashBoardLayout({ children }) {
   return (
-    <section className="flex w-full overflow-hidden">
+    <section className="flex">
       <div className="bg-primary h-auto w-1/4 text-white pt-6">
         <div className="bg-transGrey p-4 w-11/12 rounded-r-lg flex gap-1">
           <div className="w-[50px] h-[50px] rounded-full bg-[#CAC4D0] flex justify-center items-center">
@@ -435,7 +435,7 @@ export default function dashBoardLayout({ children }) {
           </div>
         </div>
       </div>
-      <div className="w-full">{children}</div>
+      <div className="w-3/4 fixed right-0 max-h-screen">{children}</div>
     </section>
   );
 }

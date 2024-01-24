@@ -3,7 +3,7 @@
 
 export default function Home() {
   return (
-    <main className="w-full  bg-[#F4EFF4]">
+    <main className="w-full overflow-auto  bg-[#F4EFF4]">
       <div className="flex justify-between w-full p-4 pt-8 bg-white drop-shadow-md rounded-b-lg">
         <h3 className="font-medium">Home</h3>
         <div className="flex gap-1">
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full p-6">
+      <div className="w-full p-6 mt-[20px] max-h-screen">
         <div className="w-fit flex flex-col gap-4">
           <div className="w-fit flex gap-4">
             <div className="w-fit flex flex-col gap-4">
