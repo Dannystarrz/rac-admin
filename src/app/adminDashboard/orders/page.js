@@ -128,7 +128,7 @@ export default function Home() {
              your registered website customers in one place.
            </p>
            <button 
-           onClick={()=>navigate.push('/adminDashboard/orders/orderHistory')}
+           onClick={()=>navigate.push('/adminDashboard/orders/orderCategories/confirmedOrders')}
            className="bg-[#6750A4] justify-center rounded-2xl py-3 px-6 w-full flex text-white items-center gap-4">
              <svg
                xmlns="http://www.w3.org/2000/svg"
