@@ -144,8 +144,7 @@ export default function orderCategoriesLayout({ children }) {
            <Link
              href={"/adminDashboard/orders/orderCategories/confirmedOrders"}
              className={
-               pathname ===
-               "/adminDashboard/orders/orderCategories/confirmedOrders"
+              pathname.startsWith("/adminDashboard/orders/orderCategories/confirmedOrders")
                  ? "text-[#6750A4] font-medium pb-6 rounded-b border-[#6750A4]  border-b-4 "
                  : "font-medium"
              }
@@ -155,8 +154,7 @@ export default function orderCategoriesLayout({ children }) {
            <Link
              href={"/adminDashboard/orders/orderCategories/orderRequests"}
              className={
-               pathname ===
-               "/adminDashboard/orders/orderCategories/orderRequests"
+              pathname.startsWith("/adminDashboard/orders/orderCategories/orderRequests")
                  ? "text-[#6750A4] font-medium pb-6 rounded-b border-[#6750A4]  border-b-4 "
                  : "font-medium"
              }
@@ -166,8 +164,7 @@ export default function orderCategoriesLayout({ children }) {
            <Link
              href={"/adminDashboard/orders/orderCategories/draftRequests"}
              className={
-               pathname ===
-               "/adminDashboard/orders/orderCategories/draftRequests"
+               pathname.startsWith("/adminDashboard/orders/orderCategories/draftRequests")
                  ? "text-[#6750A4] font-medium pb-6 rounded-b border-[#6750A4]  border-b-4 "
                  : "font-medium"
              }

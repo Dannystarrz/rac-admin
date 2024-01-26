@@ -5,8 +5,12 @@ import { BsThreeDots } from "react-icons/bs";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+
+  const navigate = useRouter();
+
    return (
      <div className="w-full flex flex-col">
        <div className="flex items-center justify-between ">
@@ -111,7 +115,9 @@ export default function Home() {
            </button>
          </div>
          <div>
-           <button className="bg-[#060C2C] text-white flex gap-2 items-center font-roboto p-[10px_15px] rounded-[10px]">
+           <button 
+           onClick={navigate.push('/adminDashboard/orders/createOrder')}
+           className="bg-[#060C2C] text-white flex gap-2 items-center font-roboto p-[10px_15px] rounded-[10px]">
              <svg
                xmlns="http://www.w3.org/2000/svg"
                width="24"
@@ -239,22 +245,23 @@ export default function Home() {
                   <Menu.Items className="absolute z-20 right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-[#FFFBFE] border-none shadow-lg  ">
                     <div className="">
                       <Menu.Item>
-                        <Link to='/admin/draft-detail'
-                          className={`hover:bg-brand/200 hover:text-white group flex w-full items-center rounded-t-md  px-2 py-[10px] text-sm`}
+                        <Link href='/adminDashboard/orders/orderCategories/draftRequests/orderDetails'
+                          className={`hover:bg-[#6750A4] hover:text-white group flex w-full items-center rounded-t-md  px-2 py-[10px] text-sm`}
                         >
                           View Order Details
                         </Link>
                       </Menu.Item>
                       <Menu.Item>
-                        <button
-                          className={` hover:bg-brand/200 hover:text-white group flex w-full items-center  px-2 py-[10px] text-sm`}
+                        <Link
+                          href='/adminDashboard/orders/orderCategories/draftRequests/paymentStatus'
+                          className={` hover:bg-[#6750A4] hover:text-white group flex w-full items-center  px-2 py-[10px] text-sm`}
                         >
                           Check Payment Status
-                        </button>
+                        </Link>
                       </Menu.Item>
                       <Menu.Item>
                         <button
-                          className={`hover:bg-brand/200 hover:text-white group flex w-full items-center rounded-b-md  px-2 py-[10px] text-sm`}
+                          className={`hover:bg-[#6750A4] hover:text-white group flex w-full items-center rounded-b-md  px-2 py-[10px] text-sm`}
                         >
                           Cancel Order
                         </button>

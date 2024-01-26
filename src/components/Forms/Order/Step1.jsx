@@ -1,18 +1,11 @@
-/* eslint-disable react/prop-types */
-
-import { useDispatch, useSelector } from "react-redux";
+'use client'
 import ChevronRight from "../../Icons/ChevronRight";
 import SelectInput from "../Inputs/SelectInput";
 import TextInput from "../Inputs/TextInput";
-import { updateField } from "../../../services/features/orderSlice/orderSlice";
+
 
 function Step1() {
-  const dispatch = useDispatch();
-  const order = useSelector((state) => state.order);
-
-  const handleFieldChange = (field, value) => {
-    dispatch(updateField({ field, value }));
-  };
+  
 
   return (
     <>
@@ -27,10 +20,8 @@ function Step1() {
           <TextInput
             label="Assigned Customer"
             id="assignedCustomer"
-            value={order.assignedCustomer}
-            onChange={(e) =>
-              handleFieldChange("assignedCustomer", e.target.value)
-            }
+            value=''
+            
           />
         </div>
 
@@ -39,8 +30,7 @@ function Step1() {
             <SelectInput
               id="order"
               label="Order Type"
-              value={order.orderType}
-              onChange={(e) => handleFieldChange("orderType", e.target.value)}
+              value=''
               options={
                 <>
                   <option value="" className="">
@@ -57,8 +47,7 @@ function Step1() {
             <SelectInput
               id="status"
               label="Order Status"
-              value={order.orderStatus}
-              onChange={(e) => handleFieldChange("orderStatus", e.target.value)}
+              value=''
               options={
                 <>
                   <option value="" className="">
@@ -78,8 +67,7 @@ function Step1() {
             <SelectInput
               id="order"
               label="Service"
-              value={order.service}
-              onChange={(e) => handleFieldChange("service", e.target.value)}
+              value=''
               options={
                 <>
                   <option value="" className="">
@@ -105,10 +93,7 @@ function Step1() {
             <SelectInput
               id="order"
               label="Shipment Method"
-              value={order.shipmentMethod}
-              onChange={(e) =>
-                handleFieldChange("shipmentMethod", e.target.value)
-              }
+              value=''
               options={
                 <>
                   <option value="" className="">
@@ -128,10 +113,6 @@ function Step1() {
             <SelectInput
               id="status"
               label="Delivery Company"
-              value={order.deliveryCompany}
-              onChange={(e) =>
-                handleFieldChange("deliveryCompany", e.target.value)
-              }
               options={
                 <>
                   <option value="" className="">

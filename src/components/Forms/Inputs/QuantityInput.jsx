@@ -1,29 +1,16 @@
-/* eslint-disable react/prop-types */
+'use client'
+
 import { AddSquare, MinusSquare } from "iconsax-react";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  updateItemQuantity,
-  updateShopItemQuantity,
-} from "../../../services/features/orderSlice/orderSlice";
 
 const QuantityInput = ({ id, label, quantity, index }) => {
-  const dispatch = useDispatch();
-  const order = useSelector((state) => state.order);
+ 
 
   const handleSubtract = () => {
-    if (order.service === "shop-for-me") {
-      dispatch(updateShopItemQuantity({ index, increment: false }));
-    } else {
-      dispatch(updateItemQuantity({ index, increment: false }));
-    }
+   
   };
 
   const handleAdd = () => {
-    if (order.service === "shop-for-me") {
-      dispatch(updateShopItemQuantity({ index, increment: true }));
-    } else {
-      dispatch(updateItemQuantity({ index, increment: true }));
-    }
+    
   };
 
   return (
@@ -31,7 +18,6 @@ const QuantityInput = ({ id, label, quantity, index }) => {
       <div className="relative z-0">
         <button
           type="button"
-          onClick={handleSubtract}
           className="absolute left-2 top-2 z-10 flex items-center justify-center rounded-[6.25rem] p-2 hover:bg-surface-300 focus:bg-surface-400"
         >
           <MinusSquare size="24" color="#292d32" variant="Outline" />
@@ -39,7 +25,6 @@ const QuantityInput = ({ id, label, quantity, index }) => {
 
         <button
           type="button"
-          onClick={handleAdd}
           className="absolute right-2 top-2 z-10 flex items-center justify-center rounded-[6.25rem] p-2 hover:bg-surface-300 focus:bg-surface-400"
         >
           <AddSquare size="24" color="#292d32" variant="Outline" />
@@ -53,7 +38,7 @@ const QuantityInput = ({ id, label, quantity, index }) => {
           id={id}
           className="relative block h-14 w-full overflow-x-auto rounded-[20px] border border-gray-500 bg-neutral-10 px-14 py-2 text-center leading-5 focus:border-2 focus:border-primary-600 focus:outline-none focus:ring-0"
           placeholder=" "
-          value={quantity}
+          value=''
           readOnly
         />
 

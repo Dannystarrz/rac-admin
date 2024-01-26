@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { useLoginAdminMutation } from "../../../services/routes/auth";
-import { useNavigate } from "react-router-dom";
 import logo from "../../../assets/svg/rac-logo.svg";
 import { setUser } from "../../../services/features/authSlice/authSlice";
 import TextInput from "../Inputs/TextInput";

@@ -1,13 +1,11 @@
-/* eslint-disable react/prop-types */
-import { useDispatch, useSelector } from "react-redux";
+'use client'
 import ChevronRight from "../../Icons/ChevronRight";
 import SelectInput from "../Inputs/SelectInput";
 import TextInput from "../Inputs/TextInput";
-import { updateField } from "../../../services/features/orderSlice/orderSlice";
+
 
 function Step3() {
-  const order = useSelector((state) => state.order);
-  const dispatch = useDispatch();
+
 
   const handleFieldChange = (field, value) => {
     dispatch(updateField({ field, value }));
@@ -25,14 +23,14 @@ function Step3() {
           <div className="grid gap-[30px] mt-[30px]">
             <div className="grid grid-cols-2 gap-[30px] ">
               <TextInput
-                value={order.receiverFirstName}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverFirstName", e.target.value)
                 }
                 label="Receiver's First Name *"
               />
               <TextInput
-                value={order.receiverLastName}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverLastName", e.target.value)
                 }
@@ -41,14 +39,14 @@ function Step3() {
             </div>
             <div className="grid grid-cols-2 gap-[30px]">
               <TextInput
-                value={order.receiverEmail}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverEmail", e.target.value)
                 }
                 label="Receiver's Email"
               />
               <TextInput
-                value={order.receiverPhone}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverPhone", e.target.value)
                 }
@@ -59,7 +57,7 @@ function Step3() {
               <SelectInput
                 id="store"
                 label="Destination Country *"
-                value={order.destinationCountry}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationCountry", e.target.value)
                 }
@@ -77,7 +75,7 @@ function Step3() {
               <SelectInput
                 id="store"
                 label="Destination State *"
-                value={order.destinationState}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationState", e.target.value)
                 }
@@ -95,7 +93,7 @@ function Step3() {
               <SelectInput
                 id="store"
                 label="Destination City *"
-                value={order.destinationCity}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationCity", e.target.value)
                 }
@@ -113,14 +111,14 @@ function Step3() {
             </div>
             <div className="grid gap-[30px]">
               <TextInput
-                value={order.receiverAddress}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverAddress", e.target.value)
                 }
                 label="Receiver's Address *"
               />
               <TextInput
-                value={order.destinationZip}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationZip", e.target.value)
                 }
@@ -133,14 +131,14 @@ function Step3() {
           <div className="grid gap-[30px] mt-[30px]">
             <div className="grid grid-cols-2 gap-[30px] ">
               <TextInput
-                value={order.receiverFirstName}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverFirstName", e.target.value)
                 }
                 label="Receiver's First Name *"
               />
               <TextInput
-                value={order.receiverLastName}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverLastName", e.target.value)
                 }
@@ -149,14 +147,14 @@ function Step3() {
             </div>
             <div className="grid grid-cols-2 gap-[30px]">
               <TextInput
-                value={order.receiverEmail}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverEmail", e.target.value)
                 }
                 label="Receiver's Email"
               />
               <TextInput
-                value={order.receiverPhone}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverPhone", e.target.value)
                 }
@@ -167,7 +165,7 @@ function Step3() {
               <SelectInput
                 id="store"
                 label="Destination Country *"
-                value={order.destinationCountry}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationCountry", e.target.value)
                 }
@@ -185,7 +183,7 @@ function Step3() {
               <SelectInput
                 id="store"
                 label="Destination State *"
-                value={order.destinationState}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationState", e.target.value)
                 }
@@ -203,7 +201,7 @@ function Step3() {
               <SelectInput
                 id="store"
                 label="Destination City *"
-                value={order.destinationCity}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationCity", e.target.value)
                 }
@@ -221,14 +219,14 @@ function Step3() {
             </div>
             <div className="grid gap-[30px]">
               <TextInput
-                value={order.receiverAddress}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("receiverAddress", e.target.value)
                 }
                 label="Receiver's Address *"
               />
               <TextInput
-                value={order.destinationZip}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationZip", e.target.value)
                 }
@@ -266,7 +264,7 @@ function Step3() {
               <SelectInput
                 id="address"
                 label="Destination/Shipping Address *"
-                value={order.destinationAddress}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationAddress", e.target.value)
                 }
@@ -312,7 +310,7 @@ function Step3() {
               <SelectInput
                 id="address"
                 label="Destination/Shipping Address *"
-                value={order.destinationAddress}
+                value=''
                 onChange={(e) =>
                   handleFieldChange("destinationAddress", e.target.value)
                 }

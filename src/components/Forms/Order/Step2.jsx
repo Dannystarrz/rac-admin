@@ -9,19 +9,6 @@ import CurrencyInput from "../Inputs/CurrencyInput";
 import QuantityInput from "../Inputs/QuantityInput";
 import FileInput from "../Inputs/FileInput";
 import TextAreaInput from "../Inputs/TextAreaInput";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  addItem,
-  deleteItem,
-  updateField,
-  updateItem,
-  updateCarItem,
-  addCarItem,
-  deleteCarItem,
-  updateShopItem,
-  addShopItem,
-  deleteShopItem,
-} from "../../../services/features/orderSlice/orderSlice";
 import Properties from "../../Modals/Properties";
 import DateInput from "../Inputs/DateField";
 import CarProperties from "../../Modals/CarProperties";
@@ -35,59 +22,43 @@ function Step2() {
   const toggle = (i) => { 
     setDrop((prevFaq) => (prevFaq === i ? null : i));
   };
-  const dispatch = useDispatch();
-  const order = useSelector((state) => state.order);
 
   const handleFieldChange = (field, value) => {
-    dispatch(updateField({ field, value }));
+    
   };
 
   function handleItemChange(index, field, value) {
-    dispatch(updateItem({ index, field, value }));
+   
   }
   function handleShopItemChange(index, field, value) {
-    dispatch(updateShopItem({ index, field, value }));
+    
   }
 
   function handleCarItemChange(index, field, value) {
-    dispatch(updateCarItem({ index, field, value }));
+    
   }
 
   function deleteCarItemFunc(index){
-     dispatch(deleteCarItem(index))
+  
   }
 
   function addNewItem() {
-    dispatch(
-      addItem({
-        name: "",
-        image: "",
-        cost: "",
-        quantity: 0,
-        description: "",
-        color: "",
-        properties: [
-          {
-            name: "",
-            description: "",
-          },
-        ],
-      })
-    );
+    
   }
 
   function addNewCarItem(){
-    dispatch(addCarItem())
+   
   }
   function addNewShopItem(){
-    dispatch(addShopItem())
+    
   }
 
   function deleteSingleItem(index) {
-    dispatch(deleteItem(index));
+
   }
+    
   function deleteShopItemFunc(index) {
-    dispatch(deleteShopItem(index));
+    
   }
 
   return (
@@ -105,10 +76,8 @@ function Step2() {
             <SelectInput
               id="order"
               label="Origin/Shipment Location"
-              value={order.deliveryLocation}
-              onChange={(e) =>
-                handleFieldChange("deliveryLocation", e.target.value)
-              }
+              value=''
+              
               options={
                 <>
                   <option value="" className="">

@@ -4,32 +4,18 @@ import { Fragment} from "react";
 import TextInput from "../Forms/Inputs/TextInput";
 import TextAreaInput from "../Forms/Inputs/TextAreaInput";
 import { Add, ArrowCircleRight2, Bag } from "iconsax-react";
-import { useDispatch, useSelector } from "react-redux";
-import { addShopProperty, deleteShopProperty, updateShopProperty } from "../../services/features/orderSlice/orderSlice";
+
 
 function ShopProperties({ isOpen, setIsOpen, item, index: itemIndex }) {
-  const dispatch = useDispatch();
-  const order = useSelector((state) => state.order);
+  
 
 
   const addPropertyFunc = (itemIndex) => {
-    dispatch(
-        addShopProperty({
-        index: itemIndex,
-        property: { name: "", description: "" },
-      })
-    );
+   
   };
 
   const deletePropertyFunc = ({ index, propertyIndex }) => {
-    if (order.carItem[index].properties.length > 1) {
-      dispatch(
-        deleteShopProperty({
-          index,
-          propertyIndex,
-        })
-      );
-    }
+    
   };
 
   // const updatePropertyFunc = ({ itemIndex, propertyIndex }) => {
@@ -95,34 +81,12 @@ function ShopProperties({ isOpen, setIsOpen, item, index: itemIndex }) {
                    <TextInput
                       label={`Property Label ${propertyIndex + 1} *`}
                       value={item.properties[property].name}
-                      onChange={
-                        (e) => dispatch(
-                            updateShopProperty({
-                            index: 0, 
-                            propertyIndex,
-                            updatedProperty: {
-                              name: e.target.value,
-                              description: order.shopItem[0].properties[property].description,
-                            },
-                          })
-                        )
-                      }
+                      
                     />
                     <TextAreaInput
                       label={`Property Description ${propertyIndex + 1}`}
                       value={item.properties[property].description}
-                      onChange={(e) =>
-                        dispatch(
-                            updateShopProperty({
-                            index: 0, // Assuming you want to update the first item
-                            propertyIndex,
-                            updatedProperty: {
-                              name: order.shopItem[0].properties[property].name,
-                              description: e.target.value,
-                            },
-                          })
-                        )
-                      }
+                      
                     />
                    </div>
                    <button onClick={()=>deletePropertyFunc({index: itemIndex, propertyIndex})}>
